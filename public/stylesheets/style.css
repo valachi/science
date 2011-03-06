@@ -1,5 +1,5 @@
 .container {
-    width: 910px;
+    width: 710px;
     height: 100%;
 }
 
@@ -12,8 +12,14 @@ header {
 }
 
 footer {
+    width: 100%;
     position: absolute;
     bottom: 0;
+    text-align: center
+}
+
+footer p {
+    font-size :10px
 }
 
 /*text*/

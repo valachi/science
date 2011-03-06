@@ -11,14 +11,23 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(params[:article])
     if @article.save
-      redirect_to :action => "index"
+      redirect_to(root_path)
     else
       render :new
     end
   end
 
   def show
-    @article = Article.find(params[:article])
+    @article = Article.find(params[:id])
+  end
+
+  def delete
+    @article = Article.find(params[:id])
+  end	
+	
+  def destroy
+    Article.find(params[:id]).destroy
+    redirect_to root_path
   end
 
 end
