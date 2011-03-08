@@ -1,7 +1,4 @@
 <h1>Hello, world! <%= link_to("Create new article", new_article_path) %> </h1>
- <p>I’m not able to open PDF files - I don’t use a Mac. Luckily, my assistant was able to open your PDF, print it, scan it and save   it as a JPG. I have to say, the colors you’ve chosen are horrible. Everything looks muddy. But I do like how the whole picture is slanted; it looks totally MTV.</p>
-
-
 
   <% @articles.each do |article| %>
   <div class="article">
@@ -15,6 +12,7 @@
 
     <div class="destroy_article_action">
       <%= link_to("delete", article, :method => :delete, :confirm => "Семь раз отмерь, один раз отрежь!") %>
+      <%= link_to("edit", edit_article_path(article)) %>
     </div>  
   </div>
   <% end %>
