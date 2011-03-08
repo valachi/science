@@ -1,22 +1,9 @@
 <h1>Edit article</h1>
 
 <%= form_for @article do |f| %>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :preview %><br />
-    <%= f.text_field :preview %>
-  </div>
-  <div class="field">
-    <%= f.label :text %><br />
-    <%= f.text_field :text %>
-  </div>
-  <div class="field">
-    <%= f.label :permalink %><br />
-    <%= f.text_field :permalink %>
-  </div>
+
+  <%= render(:partial => "form", :locals => {:f => f}) %>  
+
   <div class="form_action">
     <%= f.submit "Update article" %>
   </div>
