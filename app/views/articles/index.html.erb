@@ -14,7 +14,7 @@
     </div>
 
     <div class="destroy_article_action">
-      <%= link_to("delete", {:action => :delete, :id => article.id}) %>
+      <%= link_to("delete", article, :method => :delete, :confirm => "Семь раз отмерь, один раз отрежь!") %>
     </div>  
   </div>
   <% end %>
