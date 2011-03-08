@@ -6,7 +6,7 @@
   <% @articles.each do |article| %>
   <div class="article">
     <div class="article_h2">
-      <%= link_to("#{article.title}", {:action => :show, :id => article.id}) %>
+      <h2><%= link_to("#{article.title}", {:action => :show, :id => article.id}) %></h2>
     </div>
 
     <div class="article_preview">
