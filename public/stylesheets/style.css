@@ -1,33 +1,10 @@
 .container {
     width: 710px;
-    height: 100%;
 }
 
 body {
     background: url('/images/background.jpg');
 }
-
-header {
-    padding-top: 20px;
-}
-
-footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center
-}
-
-footer p {
-    font-size :10px
-}
-
-/*text*/
-
-p {
-    font-size: 16px;
-}
-
 /*form styling*/
 
 
