@@ -1,5 +1,7 @@
 require 'digest'
 class User < ActiveRecord::Base
+  has_many :articles  
+  
   attr_accessor :password
   attr_accessible :username, :email, :password, :password_confirmation
 
@@ -11,9 +13,9 @@ class User < ActiveRecord::Base
   
   before_save :encrypt_password
 
-  def self.authenticate
+  def self.authenticate(email, password)
     user = User.find_by_email(email)
-    if user && user.hashed_password == Digest::SHA2.hexdigest("#{user.password}, #{user.salt_password}")
+    if user && user.hashed_password == Digest::SHA2.hexdigest("#{password}, #{user.salt_password}")
       user
     else
       nil
