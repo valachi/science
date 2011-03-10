@@ -1,4 +1,4 @@
-<h1>Hello, world! <%= link_to("Create new article", new_article_path) %> </h1>
+<h1>Hello, world!</h1>
 
   <% @articles.each do |article| %>
   <div class="article">
@@ -12,7 +12,8 @@
 
     <div class="destroy_article_action">
       <%= link_to("delete", article, :method => :delete, :confirm => "Семь раз отмерь, один раз отрежь!") %>
-      <%= link_to("edit", edit_article_path(article)) %>
+      <%= link_to("edit", edit_article_path(article)) %><br />
+      <%= link_to("Create new article", new_article_path) %> 
     </div>  
   </div>
   <% end %>

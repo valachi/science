@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110304192158) do
+ActiveRecord::Schema.define(:version => 20110310103913) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(:version => 20110304192158) do
     t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "fieldname"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "username"
+    t.string   "hashed_password"
+    t.string   "salt_password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "admin",           :default => false
   end
 
 end
