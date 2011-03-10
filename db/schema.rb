@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(:version => 20110310103913) do
     t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "fieldname"
   end
 
   create_table "users", :force => true do |t|
