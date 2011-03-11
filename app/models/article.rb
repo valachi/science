@@ -1,7 +1,7 @@
 class Article < ActiveRecord::Base
   belongs_to :user
   
-  default_scope :order => "articles.created_at ASC"  
+  default_scope :order => "articles.created_at DESC"  
 
   validates :title, :presence => true, :uniqueness => true
   validates :preview, :presence => true, :uniqueness => true

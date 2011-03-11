@@ -13,9 +13,9 @@
 
     <div class="destroy_article_action">
       <%= link_to("delete", article, :method => :delete, :confirm => "Семь раз отмерь, один раз отрежь!") %>
-      <%= link_to("edit", edit_article_path(article)) %><br />
+      <%= link_to("edit", edit_article_path(article)) %>
+      <p> Опубликовано <%= article.created_at.strftime("%d %B %Y, %H:%M") %></p>
     </div>  
   </div>
   <% end %>
 </div>
-  
