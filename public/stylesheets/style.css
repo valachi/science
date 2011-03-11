@@ -6,23 +6,4 @@ body {
     background: url('/images/background.jpg');
 }
 
-h2 {
-    font-size: 16px;
-        
-    }
-
-.article_preview {
-    font-size: 12px;
-        
-    }
-
-.article_text {
-    font-size: 12px;
-        
-    }
 /*form styling*/
-
-input#article_text {
-    width: 900px;
-    height: 500px;
-}
