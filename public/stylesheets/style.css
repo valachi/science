@@ -3,7 +3,20 @@
 }
 
 body {
-    background: url('/images/background.jpg');
+    font: 0.75em Verdana,sans-serif;
+}
+
+.preview_h2 a {
+    color: #8277A3;
+}
+
+.preview_h2 a:hover {
+    color: #ABA4C2;
 }
 
 /*form styling*/
+
+#article_text {
+    width: 700px;
+    height: 400px;
+}
