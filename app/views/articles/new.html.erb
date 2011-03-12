@@ -1,7 +1,7 @@
 <h1>Новый пост в ленту</h1>
 
 <%= form_for @article do |f| %>
-
+  <%= render "shared/error_messages" %>
   <%= render(:partial => "form", :locals => {:f => f}) %>
 
   <div class="form_action">
