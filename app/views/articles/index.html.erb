@@ -12,8 +12,12 @@
     </div>
 
     <div class="destroy_article_action">
+    <% if @current_user %>
       <%= link_to("delete", article, :method => :delete, :confirm => "Семь раз отмерь, один раз отрежь!") %>
       <%= link_to("edit", edit_article_path(article)) %>
+    <% else %>
+      <p> YOU ARE NOT LOGGED IN</p>
+    <% end %>
       <p> Опубликовано <%= article.created_at.strftime("%d %B %Y, %H:%M") %></p>
     </div>  
   </div>
