@@ -3,6 +3,7 @@ class SessionsController < InheritedResources::Base
   actions = :new, :create
 
   def new
+    destroy if current_user
   end
 
   def create
