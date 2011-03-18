@@ -1,5 +1,5 @@
 <h1><%= @article.title %></h1>
-<p><%= @article.text %></p>
+<p><%= raw  RedCloth.new(@article.text).to_html %></p>
 <p> <%= link_to("delete", @article, :method => :delete, :confirm => "Are you sure?") %>
     <%= link_to("edit", edit_article_path(@article)) %> </p>
 
