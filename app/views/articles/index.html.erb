@@ -1,5 +1,7 @@
 <h1>Hello, world!</h1>
-<p><%= link_to("Добавить новую статью", new_article_path) %></p>
+<% if current_user %>
+  <p><%= link_to("Добавить новую статью", new_article_path) %></p>
+<% end %>
 
   <% @articles.each do |article| %>
   <div class="article">
