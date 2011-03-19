@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
   belongs_to :user
+  has_friendly_id :permalink, :use_slug => true
   
   default_scope :order => "articles.created_at DESC"  
 

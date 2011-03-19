@@ -4,3 +4,5 @@ gem 'rails', '3.0.3'
 gem 'mysql2'
 gem 'inherited_resources'
 gem 'RedCloth'
+gem "friendly_id", "~> 3.2.1"
+
