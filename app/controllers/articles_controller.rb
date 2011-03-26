@@ -1,6 +1,10 @@
 class ArticlesController < InheritedResources::Base
   
-  before_filter :must_be_admin, :except => [:show, :index]  
+  before_filter :must_be_admin, :except => [:show, :index]
+
+  def index
+    @articles = Article.page(params[:page]).per(5)
+  end  
 
   def create
     create!(:notice => "Your article was successfully created")
