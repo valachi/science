@@ -1,38 +1,13 @@
 .container {
-    width: 710px;
+    width: 1200px;
 }
 
-body {
-    font: 0.75em Verdana,sans-serif;
-}
-
-.preview_h2 a {
-    color: #8277A3;
-}
-
-.preview_h2 a:hover {
-    color: #ABA4C2;
+header {
 }
 
 /*Стили формы контроллера articles*/
 
-#article_title {
-    width: 500px;
-}
 
-#article_preview {
-    width: 500px;
-    height: 100px;
-}
-
-#article_text {
-    width: 700px;
-    height: 400px;
-}
-
-#article_permalink {
-    width: 500px;
-}
 
 /* Navigation */
 

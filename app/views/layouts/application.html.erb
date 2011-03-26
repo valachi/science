@@ -10,15 +10,6 @@
 
 <div class="container">
 
-  <nav class="navigation">
-    <% if current_user %>
-      <ul>
-        <li>logged in as <strong><%= current_user.username %></strong></li>,
-        <li><%= link_to "Sign out", log_out_path, :method => :delete %></li>
-      </ul>
-    <% end %>
-  </nav>
-
   <%= render 'layouts/header' %>
     <% flash.each do |key, value| %>
       <div class="flash <%= key %>"> <%= value %> </div>
