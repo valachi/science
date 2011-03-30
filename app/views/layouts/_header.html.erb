@@ -1,18 +1,14 @@
-<header>
-  <nav class="navigation">
+<div id="header">
+  <div class="nav">
     <% if current_user %>
       <ul>
-        <li>logged in as <strong><%= current_user.username %></strong></li>,
+        <li>logged in as <strong><%= current_user.username %></strong></li> |
+        <li><%= link_to("Добавить новую статью", new_article_path) %></li>  |
         <li><%= link_to "Sign out", log_out_path, :method => :delete %></li>
       </ul>
     <% end %>
-  </nav>
+  </div>
+</div>
+<div id="menu">
 
-<%= image_tag('head23.jpg') %>
-<h1>Hello, world!</h1>
-<% if current_user %>
-  <p><%= link_to("Добавить новую статью", new_article_path) %></p>
-<% end %>
-
-
-</header>
+</div>

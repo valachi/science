@@ -1,47 +1,86 @@
 .container {
     width: 1200px;
+    margin: 0 auto;
 }
 
-header {
+#header {
+    background-image: url('/images/head3.jpg');
+    width: 1200px;
+    height: 187px;
+}
+
+#menu {
+    background-image: url('/images/headmenu3.jpg');
+    width: 1200px;
+    height: 47px;
 }
 
 /*Стили формы контроллера articles*/
+
+.content {
+    width: 100%;
+    border: 1px solid #B1BFC2;
+}
+
+.article {
+    width: 685px;
+}
+
+.article h2 {
+    font: 28pt;
+}
+
+.article h2 a {
+    text-decoration: none;
+    color: #1f1d1d;
+}
+
+.article p {
+    font: 14pt/24pt Arial;
+    color: #5e5e5e;    
+}
+
+.entry {
+    padding-top: 35px;
+    padding-left: 100px;
+}
+
 
 
 
 /* Navigation */
 
-nav {
+.nav {
   float: right;
 }
 
-nav {
+.nav {
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
 }
 
-nav ul {
+.nav ul {
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+.nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0.2em 0;
 }
 
-nav ul li a {
+.nav ul li a {
   padding: 0 5px;
   font-weight: bold;
 }
 
-nav ul li a:visited {
+.nav ul li a:visited {
   color: #09c;
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
   text-decoration: underline;
 }
 
