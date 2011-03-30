@@ -9,10 +9,23 @@
     height: 187px;
 }
 
-#menu {
+#categories {
     background-image: url('/images/headmenu3.jpg');
     width: 1200px;
     height: 47px;
+    padding-left: ;
+}
+
+#categories ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    font: 45px;
+}
+
+#categories ul li a {
+    list-style-type: none;
+    color: white;
 }
 
 /*Стили формы контроллера articles*/
@@ -20,6 +33,8 @@
 .content {
     width: 100%;
     border: 1px solid #B1BFC2;
+    padding-top: 35px;
+    padding-left: 100px;
 }
 
 .article {
@@ -36,13 +51,12 @@
 }
 
 .article p {
-    font: 14pt/24pt Arial;
+    font: 10pt/18pt Arial;
     color: #5e5e5e;    
 }
 
 .entry {
-    padding-top: 35px;
-    padding-left: 100px;
+
 }
 
 
