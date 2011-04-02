@@ -1,12 +1,15 @@
-<div class="content">
- <% @articles.each do |article| %>
-    <div class="article">
-      <div class="entry">
-        <h2><%= link_to("#{article.title}", article_path(article)) %></h2>
-        <p> Опубликовано <%= article.created_at.strftime("%d %B %Y, %H:%M") %></p>
-        <%= raw RedCloth.new(article.preview).to_html %>
-      </div>  
-    </div>
- <% end %>
- <%= paginate @articles %>
-</div>
+  <div id="leftc">  
+    <% @articles.each do |article| %>
+      <div class="article">
+        <div class="entry">
+          <h2><%= link_to("#{article.title}", article_path(article)) %></h2>
+          <p> Опубликовано <font color="#005CB9"><%= article.created_at.strftime("%d %B %Y, %H:%M") %></font></p>
+          <%= raw RedCloth.new(article.preview).to_html %>
+        </div>  
+      </div>
+    <% end %>
+    <%= paginate @articles %>
+  </div>
+
+
+

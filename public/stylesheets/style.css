@@ -1,7 +1,8 @@
 .container {
-    width: 1200px;
+    width: 1200px;c
     margin: 0 auto;
 }
+
 
 #header {
     background-image: url('/images/head3.jpg');
@@ -13,32 +14,43 @@
     background-image: url('/images/headmenu3.jpg');
     width: 1200px;
     height: 47px;
-    padding-left: ;
+    word-spacing: 1.3em;
 }
 
 #categories ul li {
     list-style-type: none;
     display: inline-block;
     color: white;
-    font: 45px;
 }
 
 #categories ul li a {
     list-style-type: none;
     color: white;
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#themes {
+    padding: 9px 0 0 82px;
 }
 
 /*Стили формы контроллера articles*/
 
-.content {
-    width: 100%;
+#content {
+    float: left;
+    width: 1200px;
+    height: 100%;
     border: 1px solid #B1BFC2;
-    padding-top: 35px;
-    padding-left: 100px;
+}
+
+#leftc {
+    padding: 87px 58px 0 100px;
+    width: 643px;
+    float: left;
 }
 
 .article {
-    width: 685px;
 }
 
 .article h2 {
@@ -59,6 +71,20 @@
 
 }
 
+#sidebar { 
+    padding: 87px 100px 0 0;
+    float: left;
+}
+
+#sidebar h2 { 
+    font: 28pt;
+    color: #1f1d1d;
+}
+
+/*Футер*/
+
+#footer {
+}
 
 
 
