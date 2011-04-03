@@ -1,4 +1,5 @@
 Science::Application.routes.draw do
+  match 'category/:category' => "articles#index", :as => 'articles_from_category'
 
   resources :articles
   resources :users

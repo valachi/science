@@ -1,3 +1,11 @@
 <div id="sidebar">
-  <h2>Популярные темы</h2>
+<h2>Последние темы</h2>
+
+  <ul>
+    <% @sidebar_offers.each do |article| %>
+      </li> <%= link_to "#{article.title}", article_path(article)  %> </li>
+     <% end %>
+   </ul>
+
 </div>
+

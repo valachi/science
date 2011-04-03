@@ -5,6 +5,9 @@ class ArticlesController < InheritedResources::Base
 
   def index
     @articles = Article.page(params[:page]).per(5)
+    if params[:category]
+      #@articles.where(:category => params[:category])
+    end
   end
 
   def create
@@ -19,10 +22,11 @@ class ArticlesController < InheritedResources::Base
     destroy!(:notice => "Статья была успешно удалена")
   end
 
+  private
+
   def must_be_admin
     unless current_user
       redirect_to root_path, :alert => "Пшел вон!"
     end
   end
-
 end

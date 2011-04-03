@@ -14,20 +14,20 @@
     background-image: url('/images/headmenu3.jpg');
     width: 1200px;
     height: 47px;
-    word-spacing: 1.3em;
+    word-spacing: 30px;
 }
 
 #categories ul li {
     list-style-type: none;
     display: inline-block;
-    color: white;
+    color: #fffefe;
 }
 
 #categories ul li a {
     list-style-type: none;
-    color: white;
+    color: #fffefe;
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -54,11 +54,10 @@
 }
 
 .article h2 {
-    font: 28pt;
+    font: 28px;
 }
 
 .article h2 a {
-    text-decoration: none;
     color: #1f1d1d;
 }
 
@@ -67,19 +66,26 @@
     color: #5e5e5e;    
 }
 
+.article_time p {
+    font: 14px Arial;
+}
+
 .entry {
 
 }
 
-#sidebar { 
-    padding: 87px 100px 0 0;
+#sidebar {
+    width: 325px;
+    padding: 87px 0 0 0;
     float: left;
 }
 
 #sidebar h2 { 
-    font: 28pt;
+    font-size: 28px;
     color: #1f1d1d;
 }
+
+
 
 /*Футер*/
 
