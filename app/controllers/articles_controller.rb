@@ -6,7 +6,7 @@ class ArticlesController < InheritedResources::Base
   def index
     @articles = Article.page(params[:page]).per(5)
     if params[:category]
-      #@articles.where(:category => params[:category])
+       @articles = Article.where(:category => params[:category]).page(params[:page]).per(5)
     end
   end
 
