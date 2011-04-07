@@ -2,6 +2,7 @@
   <div class="nav">
     <% if current_user %>
       <ul>
+        <li><b><%= Article.count %></b> статей в базе </li> |
         <li>logged in as <strong><%= current_user.username %></strong></li> |
         <li><%= link_to "На главную", articles_path %> |
         <li><%= link_to("Добавить новую статью", new_article_path) %></li>  |

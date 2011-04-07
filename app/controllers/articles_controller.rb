@@ -7,7 +7,12 @@ class ArticlesController < InheritedResources::Base
     @articles = Article.page(params[:page]).per(5)
     if params[:category]
        @articles = Article.where(:category => params[:category]).page(params[:page]).per(5)
+       @title = "Все статьи категории #{(params[:category]).capitalize}"
     end
+  end
+  
+  def show
+    show!{@title = @article.title}
   end
 
   def create
