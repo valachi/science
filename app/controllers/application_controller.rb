@@ -2,8 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   helper_method :current_user
-  before_filter :load_sidebar_data
-  before_filter :ensure_domain
+  before_filter :load_sidebar_data, :strip_www
 
   def current_user
     current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -20,7 +19,7 @@ class ApplicationController < ActionController::Base
       end
   end
 
-  def ensure_domain
+  def strip_www
     if /^www/.match(request.host)
       redirect_to request.protocol + request.host_with_port[4..-1] + request.request_uri 
     end
