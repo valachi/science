@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :load_sidebar_data
   before_filter :ensure_domain
 
-  APP_DOMAIN = 'scione.ru'
+  APP_DOMAIN = 'scione.ru/(params[:name])'
 
   def current_user
     current_user ||= User.find(session[:user_id]) if session[:user_id]
