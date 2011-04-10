@@ -5,8 +5,6 @@ class ApplicationController < ActionController::Base
   before_filter :load_sidebar_data
   before_filter :ensure_domain
 
-  APP_DOMAIN = 'www.scione.ru'
-
   def current_user
     current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
@@ -23,8 +21,8 @@ class ApplicationController < ActionController::Base
   end
 
   def ensure_domain
-    if request.env['HTTP_HOST'] != APP_DOMAIN
-      redirect_to "http://#{APP_DOMAIN}", :status => 301
+    if /^www/.match(request.host)
+      redirect_to request.protocol + request.host_with_port[4..-1] + request.request_uri 
     end
   end
 end
