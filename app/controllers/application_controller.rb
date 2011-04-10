@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   end
 
   def ensure_domain
-    if request.env['HTTP_HOST'] == "www.#{APP_DOMAIN}/#{params[:path]}"
+    if request.env['HTTP_HOST'] =! "#{APP_DOMAIN}/#{params[:path]}"
       redirect_to "http://#{APP_DOMAIN}/#{params[:path]}", :status => 301
     end
   end
