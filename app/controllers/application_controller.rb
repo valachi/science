@@ -3,6 +3,9 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
   before_filter :load_sidebar_data
+  before_filter :ensure_domain
+
+  APP_DOMAIN = 'scione.ru'
 
   def current_user
     current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -17,5 +20,12 @@ class ApplicationController < ActionController::Base
       if params[:category]
         @sidebar_offers = Article.where(:category => params[:category]).limit(10)
       end
+  end
+
+  def ensure_domain
+    if request.env['HTTP_HOST'] != APP_DOMAIN
+      # HTTP 301 is a "permanent" redirect
+      redirect_to "http://#{APP_DOMAIN}", :status => 301
+    end
   end
 end
