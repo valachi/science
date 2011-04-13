@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   def strip_www
     if /^www/.match(request.host)
-      redirect_to request.protocol + request.host_with_port[4..-1] + request.request_uri 
+      redirect_to request.protocol + request.host_with_port[4..-1] + request.request_uri, :status => 301
     end
   end
 end
