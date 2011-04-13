@@ -14,7 +14,6 @@
     background-image: url('/images/headmenu3.jpg');
     width: 1200px;
     height: 47px;
-    word-spacing: 30px;
 }
 
 #categories ul li {
@@ -31,9 +30,22 @@
     font-weight: bold;
 }
 
+ul.main-menu li {
+    margin-right:20px; 
+}
+
+.main-menu .active span {
+    background-color: red;
+    display: block;
+    width: 100%;
+    height: 10px;
+}
+
 #themes {
     padding: 9px 0 0 82px;
 }
+
+
 
 /*Стили формы контроллера articles*/
 
@@ -45,9 +57,12 @@
 }
 
 #leftc {
-    padding: 87px 58px 0 100px;
+    padding-left: 100px;
     width: 643px;
     float: left;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .article {
@@ -76,13 +91,44 @@
 
 #sidebar {
     width: 325px;
-    padding: 87px 0 0 0;
     float: left;
 }
 
 #sidebar h2 { 
     font-size: 28px;
     color: #1f1d1d;
+}
+
+#sidebar ul li {
+    display:block;
+    width:100%; 
+    margin-bottom:5px;
+    font-size: 18px;
+    list-style:none;
+    margin:0px; 
+    padding:0px;
+}
+
+
+#top-middle {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #EEE;
+    margin-bottom: 17px;
+    background-image: url('');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    width:200px; 
+    height:80px; 
+    position:absolute; z-indez:1; 
+    left:100px; 
+    top:5px;
+    background-color: #EEE;
+    background-image: url('');
 }
 
 

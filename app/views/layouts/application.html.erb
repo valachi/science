@@ -14,8 +14,11 @@
       <div class="flash <%= key %>"> <%= value %> </div>
     <% end %>
     <div id="content">
+      <div id="top-middle">
+      </div>
         <%= yield %>
         <%= render 'layouts/sidebar' %>
+      
     </div>
     <%= render 'layouts/footer' %>      
 </div>
