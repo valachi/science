@@ -20,8 +20,8 @@ class ApplicationController < ActionController::Base
   end
 
   def strip_www
-    if /^www\./.match(request.url)
-      redirect_to request.url.replace('www.', ''), status: 301
+    if /^www/.match(request.host)
+      redirect_to request.protocol + request.host_with_port[4..-1] + request.request_uri 
     end
   end
 end
