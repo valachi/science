@@ -1,5 +1,5 @@
 .container {
-    width: 1200px;c
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -57,6 +57,16 @@ ul.main-menu li {
     height: 10px;
 }
 
+#top-middle {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: ;
+    margin-bottom: 30px;
+    background-image: url('/images/g-line-1.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
 
 /*Стили формы контроллера articles*/
 
@@ -64,17 +74,13 @@ ul.main-menu li {
     float: left;
     width: 1200px;
     height: 100%;
-    border: 1px solid #B1BFC2;
 }
 
 #leftc {
     padding-left: 100px;
-    padding-right: 30px;
     width: 643px;
     float: left;
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-position: right;
+    
 }
 
 .article {
@@ -98,17 +104,31 @@ ul.main-menu li {
 }
 
 .entry {
-
+    width: 600px;
+    text-align: justify;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 30px;
 }
+
+/*Сайдбар*/
 
 #sidebar {
     width: 325px;
+    height: 1000px;
     float: left;
+    padding-left: 40px;
+    background-image: url('/images/v-line-2.png');
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 #sidebar h2 { 
     font-size: 28px;
     color: #1f1d1d;
+}
+
+#sidebar ul {
+    padding-left: 0;
 }
 
 #sidebar ul li {
@@ -117,7 +137,6 @@ ul.main-menu li {
     margin-bottom:5px;
     font-size: 18px;
     list-style:none;
-    margin:0px; 
     padding:0px;
 }
 
@@ -125,18 +144,6 @@ ul.main-menu li {
     color: black;
     color: #5e5e5e;
 }
-
-#top-middle {
-    display: block;
-    height: 50px;
-    width: 100%;
-    background-color: #EEE;
-    margin-bottom: 17px;
-    background-image: url('');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-}
-
 
 /*Футер*/
 
