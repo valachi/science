@@ -11,4 +11,8 @@ module ApplicationHelper
     end
   end
 
+  def put_class(string)
+    " class=active" if params[:category] == string
+  end
+
 end

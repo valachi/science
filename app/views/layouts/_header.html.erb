@@ -16,10 +16,10 @@
 <div id="categories">
   <div id="themes">
     <ul class="main-menu">
-      <li class="active"><%= link_to "ТЕХНОЛОГИЯ", articles_from_category_path('technology') %><span></span></li>
-      <li><%= link_to "НАУКА", articles_from_category_path('science') %><span></span></li>
-      <li><%= link_to "ГАДЖЕТЫ", articles_from_category_path('gadgets') %><span></span></li>
-      <li><%= link_to "КОСМОС", articles_from_category_path('cosmos') %><span></span></li>
+      <li<%= put_class('technology') %>><%= link_to "ТЕХНОЛОГИЯ", articles_from_category_path('technology') %><span></span></li>
+      <li<%= put_class('science') %>><%= link_to "НАУКА", articles_from_category_path('science') %><span></span></li>
+      <li<%= put_class('gadgets') %>><%= link_to "ГАДЖЕТЫ", articles_from_category_path('gadgets') %><span></span></li>
+      <li<%= put_class('cosmos') %>><%= link_to "КОСМОС", articles_from_category_path('cosmos') %><span></span></li>
     </ul>
   </div>
 </div>
