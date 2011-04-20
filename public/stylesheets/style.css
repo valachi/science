@@ -106,7 +106,9 @@ ul.main-menu li {
 .entry {
     width: 600px;
     text-align: justify;
-    border-bottom: 1px dotted #EEE;
+    background-image: url('/images/bottm-line.png');
+    background-repeat: no-repeat;
+    background-position: left;
     padding-bottom: 30px;
 }
 
@@ -148,8 +150,7 @@ ul.main-menu li {
 /* Footer */
 
 #footer {
-    height: 50px;
-	width: 1200px;
+    height: 37px;
 	margin-top: 20px;
 	padding: 0 120px;
 	border-bottom: 1px solid #ABC;
