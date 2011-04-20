@@ -16,5 +16,5 @@
   </div>
   <div class="field">
     <%= f.label :category %>
-    <%= f.select :category, options_for_select([nil, "technology", "science", "gadgets", "cosmos", ]) %>
+    <%= f.select :category, options_for_select([@article.category, "technology", "science", "gadgets", "cosmos"]) %>
   </div>
