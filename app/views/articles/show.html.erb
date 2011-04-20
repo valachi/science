@@ -1,7 +1,21 @@
-<h1><%= @article.title %></h1>
-<p><%= raw  RedCloth.new(@article.text).to_html %></p>
-<% if current_user %>
-  <p> <%= link_to("delete", @article, :method => :delete, :confirm => "Are you sure?") if current_user.admin? %>
-  <%= link_to("edit", edit_article_path(@article)) if current_user.admin? %> </p>
-<% end %>
-
+<div id="leftc">
+  <div class="article">
+    <div class="entry">
+      <h1><%= @article.title %></h1>
+      <table>
+        <tr>
+        <td valign="center"><div class="article_time">
+          <p> Опубликовано <font color="#055DAE"><%= @article.created_at.strftime("%d %B %Y, %H:%M") %></font></p>
+        </div></td>
+        <td><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir">
+        </div></td>
+        </tr>
+      </table>
+        <p><%= raw  RedCloth.new(@article.text).to_html %></p>
+        <% if current_user %>
+          <p> <%= link_to("delete", @article, :method => :delete, :confirm => "Are you sure?") if current_user.admin? %>
+          <%= link_to("edit", edit_article_path(@article)) if current_user.admin? %> </p>
+        <% end %>
+    </div>
+  </div>
+</div>
