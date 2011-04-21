@@ -3,7 +3,6 @@
     margin: 0 auto;
 }
 
-
 #header {
     background-image: url('/images/head3.jpg');
     width: 1200px;
@@ -114,9 +113,6 @@ ul.main-menu li {
 .entry {
     width: 600px;
     text-align: justify;
-    background-image: url('/images/bottm-line.png');
-    background-repeat: no-repeat;
-    background-position: left;
     padding-bottom: 30px;
 }
 
