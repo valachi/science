@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+body { 
+    background: url('/images/most.jpg') 0 0 repeat-x;
+    font: Myriad Pro; 
+  } 
+
 #header {
     background-image: url('/images/head3.jpg');
     width: 1200px;
@@ -20,7 +25,7 @@
 }
 
 #themes {
-    padding: 9px 0 0 82px;
+    padding: 13px 0 0 82px;
 }
 
 #categories {
@@ -39,7 +44,7 @@
     list-style-type: none;
     color: #fffefe;
     text-decoration: none;
-    font-size: 18px;
+    font: 18px Myriad Pro;
     font-weight: bold;
 }
 
@@ -82,11 +87,8 @@ ul.main-menu li {
     
 }
 
-.article {
-}
-
 .article h1 {
-    font-size: 3em;
+    font: 3em Myriad Pro;
 }
 
 .article h1 a {
@@ -94,26 +96,33 @@ ul.main-menu li {
 }
 
 .article h2 {
-    font-size: 2.5em;
+    font: 2.5em Myriad Pro;
 }
 
 .article h2 a {
     color: #1f1d1d;
 }
 
+.article h2 a:hover {
+    color: #055DAE;
+}
+
 .article p {
-    font: 10pt/18pt Arial;
+    font: 10pt/18pt Myriad Pro;
     color: #5e5e5e;    
 }
 
 .article_time p {
-    font: 14px Arial;
+    font: 12px Myriad Pro;
 }
 
 .entry {
     width: 600px;
-    text-align: justify;
-    padding-bottom: 30px;
+    text-align: left;
+    padding: 30px 0 30px 0;
+    background-image: url('/images/g-line-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 /*Сайдбар*/
@@ -129,8 +138,8 @@ ul.main-menu li {
 }
 
 #sidebar h2 { 
-    font-size: 28px;
-    color: #1f1d1d;
+    font: 20px Myriad Pro;
+    color: #055DAE;
 }
 
 #sidebar ul {
@@ -144,11 +153,27 @@ ul.main-menu li {
     font-size: 18px;
     list-style:none;
     padding:0px;
+    font: Myriad Pro;
 }
 
 #sidebar ul li a {
     color: black;
     color: #5e5e5e;
+}
+
+#sidebar a:hover {
+    color: #000;
+}
+
+/*Pagination*/
+
+#pagination {
+    text-align: right;
+    padding: 10px 0 15px 0;
+    background-image: url('/images/g-line-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    
 }
 
 /* Footer */

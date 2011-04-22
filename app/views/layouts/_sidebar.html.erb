@@ -7,5 +7,11 @@
      <% end %>
    </ul>
 
+<h2>Самое популярное на сайте</h2>
+  <ul>
+    <% @sidebar_offers.each do |article| %>
+      <li> <%= link_to "#{article.title}", article_path(article)  %> </li>
+     <% end %>
+   </ul>
 </div>
 
