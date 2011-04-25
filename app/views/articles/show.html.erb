@@ -1,6 +1,6 @@
 <div id="leftc">
   <div class="article">
-    <div class="entry">
+    <div class="inner-entry">
       <h1><%= @article.title %></h1>
         <div class="article_time">
           <p> Опубликовано <font color="#055DAE"><%= @article.created_at.strftime("%d %B %Y, %H:%M") %></font></p>
@@ -12,6 +12,12 @@
         <% end %>
         <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir">
         </div>
+        <!-- End of Vkontakte comments API -->
+        <div id="vk_comments"></div>
+          <script type="text/javascript">
+            VK.Widgets.Comments("vk_comments", {limit: 10, width: "600", attach: "*"});
+          </script>
+        <!-- The end of Vkontakte comments API -->
     </div>
   </div>
 </div>

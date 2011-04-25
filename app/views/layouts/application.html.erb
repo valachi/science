@@ -6,6 +6,12 @@
   <%= csrf_meta_tag %>
   <%= render 'layouts/stylesheets' %>  
   <%= javascript_include_tag :defaults %>
+  <!--Vkontakte comments API -->
+  <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?24"></script>
+  <script type="text/javascript">
+    VK.init({apiId: 2304429, onlyWidgets: true});
+  </script>
+  <!-- End of Vkontakte comments API -->
 </head>
 <body>
 
@@ -20,6 +26,7 @@
         <%= yield %>
         <%= render 'layouts/sidebar' %>
     </div>
+
 </div>
     <%= render 'layouts/footer' %>      
  
