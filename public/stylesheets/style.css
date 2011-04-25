@@ -11,7 +11,6 @@
 
 body { 
     background: url('/images/most.jpg') 0 0 repeat-x;
-    font-family: Tahoma;
 }
 
 #header {
@@ -50,7 +49,8 @@ body {
     list-style-type: none;
     color: #fffefe;
     text-decoration: none;
-    font: 18px;
+    font-family: Tahoma;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -106,7 +106,7 @@ ul.main-menu li {
 
 .article h1 {
     font: 3em;
-    font-family: 
+    font-family: Tahoma;
 }
 
 .article h1 a {
@@ -115,6 +115,7 @@ ul.main-menu li {
 
 .article h2 {
     font-size: 2.5em;
+    font-family: Tahoma;
 }
 
 .article h2 a {
@@ -126,12 +127,13 @@ ul.main-menu li {
 }
 
 .article p {
-    font: 10.3pt/18pt "Myriad Pro";
+    font: 10.3pt/18pt Tahoma;
     color: #5e5e5e;    
 }
 
 .article_time p {
     font-size: 12px;
+    font-family: Tahoma;
 }
 
 .entry {
@@ -171,6 +173,7 @@ ul.main-menu li {
 
 #sidebar h2 { 
     font-size: 20px;
+    font-family: Tahoma;
     color: #055DAE;
 }
 
@@ -183,6 +186,7 @@ ul.main-menu li {
     width:100%; 
     margin-bottom:5px;
     font-size: 18px;
+    font-family: Tahoma;
     list-style:none;
     padding:0px;
 }
