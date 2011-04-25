@@ -1,8 +1,9 @@
+/*
 @font-face {
     font-family: "Myriad Pro";
     src: url('/fonts/MyriadPro.ttf');
 } 
-
+*/
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -10,7 +11,7 @@
 
 body { 
     background: url('/images/most.jpg') 0 0 repeat-x;
-    font-family: "Myriad Pro", Verdana, Tahoma, Arial, Helvetica, sans-serif;;
+    font-family: Tahoma;
 }
 
 #header {
@@ -49,7 +50,7 @@ body {
     list-style-type: none;
     color: #fffefe;
     text-decoration: none;
-    font: 18px "";
+    font: 18px;
     font-weight: bold;
 }
 
@@ -104,22 +105,20 @@ ul.main-menu li {
 }
 
 .article h1 {
-    font: 3em "";
+    font: 3em;
     font-family: 
 }
 
 .article h1 a {
     color: #1f1d1d;
-    font-family: ""
 }
 
 .article h2 {
-    font: 2.5em "";
+    font-size: 2.5em;
 }
 
 .article h2 a {
     color: #1f1d1d;
-    font-family: ""
 }
 
 .article h2 a:hover {
@@ -132,7 +131,7 @@ ul.main-menu li {
 }
 
 .article_time p {
-    font: 12px "";
+    font-size: 12px;
 }
 
 .entry {
@@ -171,7 +170,7 @@ ul.main-menu li {
 }
 
 #sidebar h2 { 
-    font: 20px "";
+    font-size: 20px;
     color: #055DAE;
 }
 
@@ -186,7 +185,6 @@ ul.main-menu li {
     font-size: 18px;
     list-style:none;
     padding:0px;
-    font: "";
 }
 
 #sidebar ul li a {
