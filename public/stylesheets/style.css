@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Myriad Pro;
+    font-family: "Myriad Pro";
     src: url('/fonts/MyriadPro.ttf');
 } 
 
@@ -10,7 +10,7 @@
 
 body { 
     background: url('/images/most.jpg') 0 0 repeat-x;
-    font-family: Myriad Pro;
+    font-family: "Myriad Pro";
 }
 
 #header {
@@ -49,7 +49,7 @@ body {
     list-style-type: none;
     color: #fffefe;
     text-decoration: none;
-    font: 18px Myriad Pro;
+    font: 18px "Myriad Pro";
     font-weight: bold;
 }
 
@@ -124,12 +124,12 @@ ul.main-menu li {
 }
 
 .article p {
-    font: 10.3pt/18pt MyriadPro;
+    font: 10.3pt/18pt "MyriadPro";
     color: #5e5e5e;    
 }
 
 .article_time p {
-    font: 12px Myriad Pro;
+    font: 12px "Myriad Pro";
 }
 
 .entry {
@@ -151,6 +151,10 @@ ul.main-menu li {
     padding-top: 20px;
 }
 
+#inner-yandex-block {
+    padding-bottom: 20px;
+}
+
 /*Сайдбар*/
 
 #sidebar {
@@ -164,7 +168,7 @@ ul.main-menu li {
 }
 
 #sidebar h2 { 
-    font: 20px Myriad Pro;
+    font: 20px "Myriad Pro";
     color: #055DAE;
 }
 
@@ -179,7 +183,7 @@ ul.main-menu li {
     font-size: 18px;
     list-style:none;
     padding:0px;
-    font: Myriad Pro;
+    font: "Myriad Pro";
 }
 
 #sidebar ul li a {

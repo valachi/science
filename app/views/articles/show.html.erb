@@ -10,9 +10,12 @@
           <p> <%= link_to("delete", @article, :method => :delete, :confirm => "Are you sure?") if current_user.admin? %>
           <%= link_to("edit", edit_article_path(@article)) if current_user.admin? %> </p>
         <% end %>
-        <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir">
+        <div id="inner-yandex-block">
+          <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir">
+        </div>
         </div>
         <!-- End of Vkontakte comments API -->
+        <h3>Комментарии:</h3>
         <div id="vk_comments"></div>
           <script type="text/javascript">
             VK.Widgets.Comments("vk_comments", {limit: 10, width: "600", attach: "*"});
