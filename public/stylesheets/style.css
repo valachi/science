@@ -104,19 +104,21 @@ ul.main-menu li {
 }
 
 .article h1 {
-    font-size: 3em;
+    font: 3em "Myriad Pro";
 }
 
 .article h1 a {
     color: #1f1d1d;
+    font-family: "Myriad Pro"
 }
 
 .article h2 {
-    font-size: 2.5em;
+    font: 2.5em "Myriad Pro";
 }
 
 .article h2 a {
     color: #1f1d1d;
+    font-family: "Myriad Pro"
 }
 
 .article h2 a:hover {
