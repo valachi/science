@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Myriad Pro;
+    src: url('/fonts/MyriadPro.ttf');
+} 
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -5,8 +10,8 @@
 
 body { 
     background: url('/images/most.jpg') 0 0 repeat-x;
-    font: Myriad Pro; 
-  } 
+    font-family: Myriad Pro;
+}
 
 #header {
     background-image: url('/images/head3.jpg');
