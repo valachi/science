@@ -93,7 +93,7 @@ ul.main-menu li {
 }
 
 .article h1 {
-    font: 3em Myriad Pro;
+    font-size: 3em;
 }
 
 .article h1 a {
@@ -101,7 +101,7 @@ ul.main-menu li {
 }
 
 .article h2 {
-    font: 2.5em Myriad Pro;
+    font-size: 2.5em;
 }
 
 .article h2 a {
@@ -113,7 +113,7 @@ ul.main-menu li {
 }
 
 .article p {
-    font: 10pt/18pt Myriad Pro;
+    font: 10.3pt/18pt Myriad Pro;
     color: #5e5e5e;    
 }
 
