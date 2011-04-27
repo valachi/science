@@ -112,6 +112,10 @@ ul.main-menu li {
     
 }
 
+.entry:first-child {
+    padding-top: 0;
+}
+
 .article h1 {
     font: 3em Myriad Pro;
 }
