@@ -11,14 +11,13 @@
 
 body { 
     background: url('/images/most.jpg') 0 0 repeat-x;
+    font-family: serif;
 }
 
 h1 {
-    font-family: "Myriad Pro";
 }
 
 h2 {
-    font-family: "Myriad Pro";
 }
 
 #header {
