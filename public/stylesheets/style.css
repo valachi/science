@@ -56,7 +56,7 @@ h2 {
     list-style-type: none;
     color: #fffefe;
     text-decoration: none;
-    font: 18px Myriad Pro;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ ul.main-menu li {
     float: left;
     width: 1200px;
     height: 100%;
-    font-family: Myriad Pro;
+    font-family: serif;
 }
 
 #leftc {
@@ -116,7 +116,7 @@ ul.main-menu li {
 }
 
 .article h1 {
-    font: 3em Myriad Pro;
+    font-size: 3em;
 }
 
 .article h1 a {
@@ -124,7 +124,7 @@ ul.main-menu li {
 }
 
 .article h2 {
-    font: 2.5em Myriad Pro;
+    font-size: 2.5em;
 }
 
 .article h2 a {
@@ -136,12 +136,12 @@ ul.main-menu li {
 }
 
 .article p {
-    font: 10.3pt/18pt Myriad Pro;
+    font: 10.3pt/18pt serif;
     color: #5e5e5e;    
 }
 
 .article_time p {
-    font: 12px Myriad Pro;
+    font-size: 12px;
 }
 
 .entry {
@@ -170,7 +170,7 @@ ul.main-menu li {
 /*Сайдбар*/
 
 #sidebar {
-    width: 325px;
+    width: 410px;
     height: 1000px;
     float: left;
     padding-left: 40px;
@@ -180,7 +180,7 @@ ul.main-menu li {
 }
 
 #sidebar h2 { 
-    font: 20px Myriad Pro;
+    font-size: 24px;
     color: #055DAE;
 }
 
@@ -192,7 +192,7 @@ ul.main-menu li {
     display:block;
     width:100%; 
     margin-bottom:5px;
-    font: 18px Myriad Pro;
+    font-size: 18px;
     list-style:none;
     padding:0px;
 }
