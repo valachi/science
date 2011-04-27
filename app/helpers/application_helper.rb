@@ -15,4 +15,8 @@ module ApplicationHelper
     " class=active" if params[:category] == string
   end
 
+  def put_sidebar_category
+    "категории #{params[:category]}" if params[:category]
+  end
+
 end
