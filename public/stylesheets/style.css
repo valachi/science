@@ -31,8 +31,12 @@ body {
 }
 
 #themes {
+    width: 1020px;
     padding: 8px 0 0 82px;
 }
+
+/* RSS-icon */
+#themes img { padding-top: 2px;}
 
 #categories {
     background-image: url('/images/headmenu3.jpg');
