@@ -1,19 +1,13 @@
 # encoding: utf-8
 
 class ArticlesController < InheritedResources::Base
-  before_filter :must_be_admin, :except => [:show, :index]
+  before_filter :must_be_admin, :except => [:show, :index, :feed]
 
   def index
     @articles = Article.page(params[:page]).per(5)
     if params[:category]
        @articles = Article.where(:category => params[:category]).page(params[:page]).per(5)
        @title = "Все статьи категории #{(params[:category]).capitalize}"
-    end
-
-    respond_to do |format|
-      format.html
-      format.xml { render :xml => @articles }
-      format.rss { render :layout => false } #index.rss.builder
     end
   end
   
@@ -31,6 +25,15 @@ class ArticlesController < InheritedResources::Base
 
   def destroy
     destroy!(:notice => "Статья была успешно удалена")
+  end
+
+  def feed
+        
+    @articles = Article.all   
+
+    respond_to do |format|
+      format.rss { render :layout => false } #index.rss.builder
+    end
   end
 
   private
