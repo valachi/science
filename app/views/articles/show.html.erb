@@ -11,12 +11,12 @@
           <%= link_to("edit", edit_article_path(@article)) if current_user.admin? %> </p>
         <% end %>
 <div style="display:inline">
-<table style="vertical-align:top">
+<table>
   <tbody>
     <tr>
           <td><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="lj,vkontakte,facebook,twitter,odnoklassniki,moimir,yaru" style="margin-bottom:10px"></div></td>
 
-          <td><div id="vk_like"></div>
+          <td align="right"><div id="vk_like"></div>
 <script type="text/javascript">
 VK.Widgets.Like("vk_like", {type: "10", verb: 1});
 </script></td>
