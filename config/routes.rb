@@ -7,5 +7,6 @@ Science::Application.routes.draw do
 
   match "admin" => "sessions#new"
   match "log_out" => "sessions#destroy"
+  match "feed" => 'articles#feed', :as => :feed, :defaults => { :format => 'rss' }
 
 end
