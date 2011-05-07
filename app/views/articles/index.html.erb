@@ -6,13 +6,14 @@
             <div class="article_time"><p> Опубликовано <font color="#055DAE"><%= article.created_at.strftime("%d %B %Y, %H:%M") %>
             </font></p></div>
           <%= raw RedCloth.new(article.preview).to_html %>
-          <table>
+          <table border="1px"">
             <tr>
               <td><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir"></div>
               <div id="vk_like"></div></td>
               <td><script type="text/javascript">
                 VK.Widgets.Like("vk_like", {type: "button"});
               </script></td>
+            </tr>
           </table>
         </div>  
       </div>
