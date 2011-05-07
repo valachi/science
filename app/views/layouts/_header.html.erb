@@ -15,7 +15,7 @@
 </div>
 <div id="categories">
   <div id="themes">
-    <a href="#"><%= image_tag("rss-icon.png", :size => "25x25", :align => "right") %></a>
+    <%= link_to image_tag("rss-icon.png", :size => "25x25", :align => "right"), feed_path %>
     <ul class="main-menu">
       <li<%= put_class('technology') %>><%= link_to "ТЕХНОЛОГИЯ", articles_from_category_path('technology') %><span></span></li>
       <li<%= put_class('science') %>><%= link_to "НАУКА", articles_from_category_path('science') %><span></span></li>
