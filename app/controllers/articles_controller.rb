@@ -28,7 +28,7 @@ class ArticlesController < InheritedResources::Base
   end
 
   def feed
-    @articles = Articles.all(:select => "title, preview, id, created_at", :order = > "created_at DESC", :limit => 20)
+    @articles = Articles.all(:select => "title, preview, id, created_at", :order => "created_at DESC", :limit => 20)
 
     respond_to do |format|
       format.html
