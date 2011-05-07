@@ -9,6 +9,12 @@ class ArticlesController < InheritedResources::Base
        @articles = Article.where(:category => params[:category]).page(params[:page]).per(5)
        @title = "Все статьи категории #{(params[:category]).capitalize}"
     end
+
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @articles }
+      format.rss { render :layout => false } #index.rss.builder
+    end
   end
   
   def show
@@ -26,15 +32,6 @@ class ArticlesController < InheritedResources::Base
   def destroy
     destroy!(:notice => "Статья была успешно удалена")
   end
-
-  def feed
-    @articles = Articles.all(:select => "title, preview, id, created_at", :order => "created_at DESC", :limit => 20)
-
-    respond_to do |format|
-      format.html
-      format.rss { render :layout => false } #index.rss.builder
-    end
-  end    
 
   private
 
