@@ -27,6 +27,15 @@ class ArticlesController < InheritedResources::Base
     destroy!(:notice => "Статья была успешно удалена")
   end
 
+  def feed
+    @articles = Articles.all(:select => "title, preview, id, created_at", :order = > "created_at DESC", :limit => 20)
+
+    respond_to do |format|
+      format.html
+      format.rss { render :layout => false } #index.rss.builder
+    end
+  end    
+
   private
 
   def must_be_admin
