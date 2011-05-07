@@ -32,7 +32,7 @@ body {
 
 #themes {
     width: 1020px;
-    padding: 8px 0 0 82px;
+    padding: 10px 0 0 82px;
 }
 
 /* RSS-icon */
@@ -56,6 +56,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    font-family: Georgia;
 }
 
 ul.main-menu li {
@@ -76,7 +77,7 @@ ul.main-menu li {
     height: 50px;
     width: 100%;
     background-color: ;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-image: url('/images/g-line-1.png');
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -109,17 +110,24 @@ ul.main-menu li {
     
 }
 
-.article h1 {
-    font-size: 3em;
+h1 {
+    font-size: 2.5em;
+    font-family: Georgia;
+    margin-bottom: 0;
+    
 }
 
-.article h1 a {
+h2 {
+    font-size: 2.5em;
+    font-family: Georgia;
+    margin-bottom: 0;
     color: #1f1d1d;
 }
 
 .article h2 {
     font-size: 2.5em;
-    font-family: sans-serif;
+    font-family: Georgia;
+    margin-bottom: 0;
 }
 
 .article h2 a {
@@ -158,10 +166,6 @@ ul.main-menu li {
     padding: 30px 0 30px 0;
 }
 
-.inner-entry h1, p {
-    font-family: sans-serif;
-}
-
 .inner-entry:first-child {
     padding-top: 0;
 }
@@ -188,7 +192,6 @@ ul.main-menu li {
 
 #sidebar h2 { 
     font-size: 24px;
-    font-family: sans-serif;
     color: #055DAE;
 }
 
