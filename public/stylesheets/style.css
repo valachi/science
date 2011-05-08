@@ -21,22 +21,17 @@ body {
 }
 
 #logo {
-    width: 250px; 
-    height: 90px; 
+    width: 344px; 
+    height: 144px; 
     position: absolute; z-indez:1; 
     left: 172px; 
-    top: 50px;
-    background-color: #EEE;
-    background-image: url('');
+    top: 35px;
+    background-image: url('/images/logo.png');
 }
 
 #themes {
     width: 1020px;
     padding: 10px 0 0 82px;
-}
-
-table, th, td {
-    vertical-align: center;
 }
 
 /* RSS-icon */
