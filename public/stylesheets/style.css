@@ -18,14 +18,15 @@ body {
     background-image: url('/images/head3.jpg');
     width: 1200px;
     height: 187px;
+    position: relative;
 }
 
 #logo {
     width: 344px; 
     height: 144px; 
-    position: absolute; z-indez:1; 
-    left: 172px; 
-    top: 35px;
+    position: absolute; z-index:1;
+    left: 100px;
+    top: 28px;
     background-image: url('/images/logo1-1.png');
 }
 
