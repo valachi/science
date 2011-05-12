@@ -26,8 +26,8 @@ body {
     height: 144px; 
     position: absolute; z-index:1;
     left: 100px;
-    top: 28px;
-    background-image: url('/images/logo1-1.png');
+    top: 35px;
+    background-image: url('/images/lologo.png');
 }
 
 #themes {
