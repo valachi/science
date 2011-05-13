@@ -35,7 +35,9 @@
       <div id="top-middle">
       </div>
         <%= yield %>
-        <%= render 'layouts/sidebar' %>
+        <% if controller_name == 'articles' and %w(index show).include?(action_name) %> 
+          <%= render 'layouts/sidebar' %>
+        <% end %>
     </div>
 
 </div>

@@ -5,7 +5,7 @@ class SessionsController < InheritedResources::Base
   actions = :new, :create
 
   def new
-    destroy if current_user
+    redirect_to(root_path) if current_user
   end
 
   def create
@@ -14,8 +14,8 @@ class SessionsController < InheritedResources::Base
       session[:user_id] = user.id
       redirect_to root_path, :notice => "Ты только что залогинился как #{user.email}"
     else
-      flash.now.alert = "Неправильная пара password - email"
-      render :new
+      flash.alert = "Неправильная пара password - email"
+      redirect_to "/admin"
     end
   end
 
