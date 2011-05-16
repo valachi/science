@@ -11,12 +11,14 @@ module ApplicationHelper
     end
   end
 
+  #Подчеркиваем в меню нужную категорию когда params[:category], передавя списку li класс
   def put_class(string)
     " class=active" if params[:category] == string
   end
 
+  #Выводим заголовок над сайдбаром
   def put_sidebar_category
-    "категории #{params[:category]}" if params[:category]
+    " категории #{I18n.t params[:category]}" if params[:category]
   end
 
 end

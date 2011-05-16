@@ -6,8 +6,8 @@ class ArticlesController < InheritedResources::Base
   def index
     @articles = Article.page(params[:page]).per(5)
     if params[:category]
-       @articles = Article.where(:category => params[:category]).page(params[:page]).per(5)
-       @title = "Все статьи категории #{(params[:category]).capitalize}"
+       @articles = Article.where(:category => params[:category]).page(params[:page]).per(5) #паджинация Kaminari
+       @title = "Все статьи категории #{(I18n.t params[:category])}"
     end
   end
   
