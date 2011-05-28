@@ -3,7 +3,7 @@
     <div class="inner-entry">
       <h1><%= @article.title %></h1>
         <div class="article_time">
-          <p> Опубликовано <font color="#055DAE"><%= @article.created_at.strftime("%d %B %Y, %H:%M") %></font></p>
+          <p> Опубликовано <font color="#055DAE"><%= I18n.l @article.created_at, :formats => :default %></font></p>
         </div>
         <p><%= raw  RedCloth.new(@article.text).to_html %></p>
         <% if current_user %>

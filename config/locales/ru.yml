@@ -6,3 +6,11 @@ ru:
     science: "Наука"
     gadgets: "Гаджеты"
     cosmos: "Космос"
+
+    time:
+        formats:
+            default: "%d %B %Y, %H:%M"
+    date:
+        formats:
+            default: "%B"
+        month_names: [~, января, февраля, марта, апреля, мая, июня, июля, августа, сентября, октября, ноября, декабря]
