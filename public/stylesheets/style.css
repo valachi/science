@@ -218,7 +218,7 @@ h2 {
     color: #000;
 }
 
-/*Pagination*/
+/*Pagination div*/
 
 #pagination {
     text-align: right;
@@ -252,7 +252,38 @@ h2 {
 }
 #footer a:hover {color: #000;}
 
+/* Kaminari pagination */
 
+span.page-kaminari a {
+    color: black;
+}
+
+span.page-kaminari-current {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+span.page-kaminari a:hover {
+    color: #CCC;
+}
+
+span.last-page-kaminari a {
+    color: black;
+    font-weight: bold;
+}
+
+span.last-page-kaminari a:hover {
+    color: #CCC;
+}
+
+
+span.next-page-kaminari a {
+    color: black;
+}
+
+span.first-page-kaminari a {
+    color: black;
+}
 
 /* Navigation */
 

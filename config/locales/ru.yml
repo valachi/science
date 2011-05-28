@@ -14,3 +14,11 @@ ru:
         formats:
             default: "%B"
         month_names: [~, января, февраля, марта, апреля, мая, июня, июля, августа, сентября, октября, ноября, декабря]
+
+    views:
+      pagination:
+        previous: ""
+        next: "Следующая &raquo;"
+        truncate: "..."
+        first: "&laquo;&laquo; Первая"
+        last: "Последняя &raquo;&raquo;"
