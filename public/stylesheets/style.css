@@ -22,12 +22,12 @@ body {
 }
 
 #logo {
-    width: 344px; 
+    width: 368px; 
     height: 144px; 
     position: absolute; z-index:1;
     left: 100px;
     top: 35px;
-    background-image: url('/images/lologo.png');
+    background-image: url('/images/gologo.png');
 }
 
 #themes {

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110406184837) do
+ActiveRecord::Schema.define(:version => 20110528211850) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20110406184837) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "category"
+    t.boolean  "visible",    :default => false
   end
 
   create_table "slugs", :force => true do |t|
@@ -33,6 +34,22 @@ ActiveRecord::Schema.define(:version => 20110406184837) do
 
   add_index "slugs", ["name", "sluggable_type", "sequence", "scope"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "tiny_prints", :force => true do |t|
+    t.string   "image_file_name"
+    t.string   "image_file_size"
+    t.string   "image_content_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tiny_videos", :force => true do |t|
+    t.string   "original_file_name"
+    t.string   "original_file_size"
+    t.string   "original_content_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"
