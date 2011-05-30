@@ -10,7 +10,7 @@
           <p> <%= link_to("delete", @article, :method => :delete, :confirm => "Are you sure?") if current_user.admin? %>
           <%= link_to("edit", edit_article_path(@article)) if current_user.admin? %> </p>
         <% end %>
-<div style="display:inline">
+<div style="display:inline-block;">
 <table>
   <tbody>
     <tr>
