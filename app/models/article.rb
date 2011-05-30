@@ -4,8 +4,8 @@ class Article < ActiveRecord::Base
   
   default_scope :order => "articles.created_at DESC"  
 
-  validate :title, :presence => true, :uniqueness => true
-  validate :preview, :presence => true, :uniqueness => true
-  validate :text, :presence => true, :uniqueness => true, :length => {:within => 10..1000000}
-  validate :permalink, :presence => true, :uniqueness => true
+  validates :title, :presence => true, :uniqueness => true
+  validates :preview, :presence => true, :uniqueness => true
+  validates :text, :presence => true, :uniqueness => true, :length => {:within => 10..1000000}
+  validates :permalink, :presence => true, :uniqueness => true
 end
