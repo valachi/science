@@ -176,6 +176,7 @@ h2 {
 
 #inner-yandex-block {
     padding-bottom: 20px;
+    display: inline-block;
 }
 
 /*Сайдбар*/
