@@ -4,7 +4,7 @@ Science::Application.routes.draw do
   root :to => "articles#index"
   match "feed" => "articles#feed", :as => 'feed', :defaults => { :format => 'rss' }
 
-  match 'category/:category' => "articles#index", :as => 'articles_from_category', :constraints => { :category => /(technology|science|gadgets|cosmos)/ }
+  match 'category/:category' => "articles#index", :as => 'articles_from_category', :constraints => { :category => /(robots|world|gadgets|cosmos)/ }
 
   match "admin" => "sessions#new"
   match "log_out" => "sessions#destroy"
