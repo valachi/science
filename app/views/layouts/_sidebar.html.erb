@@ -4,6 +4,7 @@
   <ul>
     <% @sidebar_offers.each do |article| %>
       <li> <%= link_to "#{article.title}", article_path(article)  %> </li>
+      <hr />
      <% end %>
    </ul>
 
@@ -11,6 +12,7 @@
   <ul>
     <% @sidebar_offers.each do |article| %>
       <li> <%= link_to "#{article.title}", article_path(article)  %> </li>
+      <hr />
      <% end %>
    </ul>
 </div>
