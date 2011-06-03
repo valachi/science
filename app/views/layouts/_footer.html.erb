@@ -4,10 +4,10 @@
   </div>
 	<div class="right" id="footer-right">
 	  <p class="large">
-      <a href="#">Технология</a> <span class="text-separator">|</span> 
-      <a href="#">Наука</a> <span class="text-separator">|</span> 
-      <a href="#">Гаджеты</a> <span class="text-separator">|</span> 
-      <a href="#">Автомобили</a>
+      <%= link_to "Технологии", articles_from_category_path('technology') %> <span class="text-separator">|</span> 
+      <%= link_to "Гаджеты", articles_from_category_path('gadgets') %> <span class="text-separator">|</span> 
+      <%= link_to "Космос", articles_from_category_path('cosmos') %><span class="text-separator">|</span> 
+      <%= link_to "Мир", articles_from_category_path('world') %>
       <a href="#">&uarr;</a>
     </p> 
 	</div>
