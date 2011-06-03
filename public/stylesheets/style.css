@@ -323,6 +323,12 @@ span.first-page-kaminari a {
   text-decoration: underline;
 }
 
+/*Помощь админу*/
+
+#adminhelp {
+float: right;
+}
+
 /*Стили error_explanation*/
 
 .field_with_errors {
