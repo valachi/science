@@ -1,3 +1,2 @@
-# And what?
-User-Agent: *
-Disallow:
+User-agent: *
+Disallow: /articles

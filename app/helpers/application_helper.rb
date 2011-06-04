@@ -3,7 +3,7 @@
 module ApplicationHelper
   
   def title
-    base_title = "Scione: наука, популярная механика, космос и многое другое"
+    base_title = "Все самое интересное из мира популярной науки | SciOne.ru"
     if @title.nil?
       base_title
     else

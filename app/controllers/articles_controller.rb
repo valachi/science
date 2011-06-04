@@ -7,7 +7,7 @@ class ArticlesController < InheritedResources::Base
     @articles = Article.where(:visible => true).page(params[:page]).per(5) #pagination Kaminari
     if params[:category]
        @articles = Article.where(:category => params[:category]).page(params[:page]).per(5) #pagination Kaminari
-       @title = "Все статьи категории #{(I18n.t params[:category])}"
+       @title = "#{(I18n.t params[:category])} - все самое интересное"
     end
   end
   
