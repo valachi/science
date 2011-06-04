@@ -184,7 +184,7 @@ h2 {
 
 #sidebar {
     width: 355px;
-    height: 1000px;
+    height: 100%;
     float: left;
     padding-left: 40px;
     background-image: url('/images/v-line-2.png');
