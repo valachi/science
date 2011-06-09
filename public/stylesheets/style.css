@@ -223,12 +223,47 @@ h2 {
 /*Pagination div*/
 
 #pagination {
-    text-align: right;
+    text-align: center;
     padding: 10px 0 15px 0;
     background-image: url('/images/g-line-1.png');
     background-repeat: no-repeat;
     background-position: bottom center;
-    
+    font-size: 16px;
+}
+
+/* Kaminari pagination */
+
+span.page-kaminari a {
+    color: black;
+}
+
+span.page-kaminari-current {
+    font-size: 16px;
+    font-weight: bold;
+    background: #0581E2;
+    padding: 0;
+}
+
+span.page-kaminari a:hover {
+    color: #CCC;
+}
+
+span.last-page-kaminari a {
+    color: black;
+    font-weight: bold;
+}
+
+span.last-page-kaminari a:hover {
+    color: #CCC;
+}
+
+
+span.next-page-kaminari a {
+    color: black;
+}
+
+span.first-page-kaminari a {
+    color: black;
 }
 
 /* Footer */
@@ -254,38 +289,7 @@ h2 {
 }
 #footer a:hover {color: #000;}
 
-/* Kaminari pagination */
 
-span.page-kaminari a {
-    color: black;
-}
-
-span.page-kaminari-current {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-span.page-kaminari a:hover {
-    color: #CCC;
-}
-
-span.last-page-kaminari a {
-    color: black;
-    font-weight: bold;
-}
-
-span.last-page-kaminari a:hover {
-    color: #CCC;
-}
-
-
-span.next-page-kaminari a {
-    color: black;
-}
-
-span.first-page-kaminari a {
-    color: black;
-}
 
 /* Navigation */
 

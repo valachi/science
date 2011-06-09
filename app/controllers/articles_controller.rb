@@ -29,7 +29,7 @@ class ArticlesController < InheritedResources::Base
 
   def feed
         
-    @articles = Article.all   
+    @articles = Article.where(visible: true)
 
     respond_to do |format|
       format.rss { render :layout => false } #index.rss.builder
