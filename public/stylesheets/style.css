@@ -59,6 +59,10 @@ body {
     font-family: Georgia;
 }
 
+#categories ul li a:hover {
+    text-decoration: underline;
+}
+
 ul.main-menu li {
     margin-right:20px; 
     padding: 0;
@@ -178,6 +182,10 @@ h2 {
 #inner-yandex-block {
     padding-bottom: 20px;
     display: inline-block;
+}
+
+a:visited {
+    color: #B237AA;
 }
 
 /*Сайдбар*/
