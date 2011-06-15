@@ -188,6 +188,13 @@ a:visited {
     color: #B237AA;
 }
 
+/*Оцентровываем картинки*/
+.article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
 /*Сайдбар*/
 
 #sidebar {
@@ -252,19 +259,10 @@ span.page-kaminari-current {
     padding: 0;
 }
 
-span.page-kaminari a:hover {
-    color: #CCC;
-}
-
 span.last-page-kaminari a {
     color: black;
     font-weight: bold;
 }
-
-span.last-page-kaminari a:hover {
-    color: #CCC;
-}
-
 
 span.next-page-kaminari a {
     color: black;
