@@ -1,0 +1,45 @@
+#sidebar
+ %h2 
+  Последние статьи 
+  =put_sidebar_category
+ %ul
+  -@sidebar_offers.each do |article|
+   %li
+    = link_to article.title, article_path(article)
+   %hr
+ %h2 
+  Самое популярное
+  %ul
+   %li
+    %a(href="http://scione.ru/articles/darvaza-turkmenistan-dver-v-ad") Дарваза, Туркменистан - "дверь в ад"
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/last-science-figures-out-keys-sexy-dancing") Учёные наконец подобрали ключ к разгадке феномена «Сексуального танца»
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/best-2011-our-favorite-products-future") Лучшее с Международной Выставки Потребительской Электроники 2011: наши любимые гаджеты будущего
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/sposobny-li-uchenye-sozdat-virus-prevrawajuwij-ljudej-v-zombi") Способны ли ученые создать вирус, превращающий людей в зомби?
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/roboty-v-processe-jevoljucii-projavljajut-altruizm") Роботы в процессе эволюции проявляют альтруизм
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/samsung7-sliding-netbook") Лучшее с МВПЭ 2011: "Планшетный ноутбук" Samsung
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/pomdevices-sonamba-wellbeing-monitor") Лучшее с МВПЭ 2011: беби-ситтер для бабушки ;)
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/ecoupled-wireless-charging-tesla-car") Лучшее с МВПЭ 2011: заряжаемый eMobil
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/marsohod-spirit-peredal-poslednij-snimok-s-marsa") Марсоход Спирит передал последний снимок с Марса
+   %hr
+   %li
+    %a(href="http://scione.ru/articles/%D0%BEtlichnoe-video-vnutrennjaja-zhizn-kletki") Отличное видео – внутренняя жизнь клетки
+   %hr
+
+
+
