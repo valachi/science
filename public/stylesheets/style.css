@@ -10,12 +10,11 @@
 }
 
 body { 
-    background: url('/images/most.jpg') 0 0 repeat-x;
+    background: url('/images/scione_3.jpg') center top no-repeat;
     font-family: sans-serif;
 }
 
 #header {
-    background-image: url('/images/head3.jpg');
     width: 1200px;
     height: 187px;
     position: relative;
@@ -37,7 +36,6 @@ body {
 
 /* RSS-icon */
 #categories {
-    background-image: url('/images/headmenu3.jpg');
     width: 1200px;
     height: 47px;
 }
@@ -380,6 +378,25 @@ float: right;
   font-size: 12px;
   list-style: square;
 }
+
+/*Инструкция к админке*/
+#instruction {float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
