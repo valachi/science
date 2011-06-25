@@ -36,8 +36,6 @@ body {
 }
 
 /* RSS-icon */
-#themes img { padding-top: 2px;}
-
 #categories {
     background-image: url('/images/headmenu3.jpg');
     width: 1200px;
