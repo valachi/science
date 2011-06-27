@@ -13,9 +13,9 @@ class ApplicationController < ActionController::Base
   end
 
   def load_sidebar_data
-    @sidebar_offers = Article.where(sidebar_visible: true).limit(10).all
+    @sidebar_offers = Article.limit(10).all
       if params[:category]
-        @sidebar_offers = Article.where(category: params[:category], sidebar_visible: true).limit(10)
+        @sidebar_offers = Article.where(category: params[:category]).limit(10)
       end
   end
 
