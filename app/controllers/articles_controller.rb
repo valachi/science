@@ -10,13 +10,25 @@ class ArticlesController < InheritedResources::Base
        @title = "#{(I18n.t params[:category])} - все самое интересное"
     end
   end
-  
+
   def show
     show!{@title = @article.title}
   end
 
+  def new
+    new! do |format| 
+      format.html { render :layout => 'admin_layout' }
+    end
+  end
+
   def create
     create!(:notice => "Новая статья успешно создана и добавлена в ленту!")
+  end
+
+  def edit
+    edit! do |format|
+      format.html { render layout: 'admin_layout' }
+    end
   end
 
   def update
