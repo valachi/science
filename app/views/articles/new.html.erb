@@ -1,10 +1,25 @@
-<h1>Новый пост в ленту</h1>
+<%# New action has an admin layout %>
+
+<div id="admin_form">
+
+<%= link_to "<< на главную", root_path %>
+
+<h1>Создание новой статьи</h1>
 
 <%= form_for @article do |f| %>
   <%= render "shared/error_messages" %>
   <%= render(:partial => "form", :locals => {:f => f}) %>
 
   <div class="form_action">
-    <%= f.submit "Create" %>
+    <%= f.submit "СОХРАНИТЬ" %>
   </div>
 <% end %>
+
+</div>
+
+<%= render 'layouts/admin_info' %>
+
+
+
+
+

@@ -1,0 +1,25 @@
+body { background-color: #E8EEF2;}
+
+#admin_form {
+    height: 100%;
+    float: left; 
+    padding-left: 20px; }
+
+.form_action { 
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+
+#admin_help { 
+    float: left;
+    border: 1px solid #CCC;
+    margin: 10px 0 0 162px; 
+    
+    }
+
+h2 { text-align: center; }
+
+h1 { 
+  font-size: 16px; }
+
+

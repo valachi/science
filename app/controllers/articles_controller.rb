@@ -16,6 +16,7 @@ class ArticlesController < InheritedResources::Base
   end
 
   def new
+    @title = "Админка - создание новой статьи"
     new! do |format| 
       format.html { render :layout => 'admin_layout' }
     end
@@ -26,6 +27,7 @@ class ArticlesController < InheritedResources::Base
   end
 
   def edit
+    @title = "Админка - редактирование существующей статьи"
     edit! do |format|
       format.html { render layout: 'admin_layout' }
     end

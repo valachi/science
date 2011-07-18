@@ -1,18 +1,18 @@
   <div class="field">
     <%= f.label :permalink, "Адрес урла статьи" %><br />
-    <%= f.text_field :permalink %>
+    <%= f.text_field :permalink, :size => "61" %><br /><br />
   </div>
   <div class="field">
     <%= f.label :title, "Здесь тайтл, он же h1" %><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :size => "61" %><br /><br />
   </div>
   <div class="field">
     <%= f.label :preview, "То, что будет во введении" %><br />
-    <%= f.text_area :preview, :size => "80x10" %>
+    <%= f.text_area :preview, :size => "80x10" %><br /><br />
   </div>
   <div class="field">
     <%= f.label :text, "ВСЯ статья целиком, ВКЛЮЧАЯ введение!" %><br />
-    <%= f.text_area :text, :size => "80x20" %>
+    <%= f.text_area :text, :size => "80x20" %><br /><br />
   </div>
   <div class="field">
     <%= f.label :category, "Без категории статью НЕ создавай" %>
