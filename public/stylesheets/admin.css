@@ -14,8 +14,10 @@ body { background-color: #E8EEF2;}
     float: left;
     border: 1px solid #CCC;
     margin: 10px 0 0 162px; 
-    
     }
+
+.highlight { background:#ff0; }
+
 
 h2 { text-align: center; }
 
