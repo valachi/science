@@ -9,5 +9,4 @@ Science::Application.routes.draw do
   match "admin" => "sessions#new"
   match "log_out" => "sessions#destroy"
 
-
 end

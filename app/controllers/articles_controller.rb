@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class ArticlesController < InheritedResources::Base
-  before_filter :must_be_admin, :except => [:show, :index, :feed]
+  before_filter :must_be_admin, :except => [:show, :index, :feed, :translit]
 
   def index
     @articles = Article.where(:visible => true).page(params[:page]).per(5) #pagination Kaminari
@@ -57,4 +57,5 @@ class ArticlesController < InheritedResources::Base
       redirect_to root_path, :alert => "Пшел вон!"
     end
   end
+
 end
