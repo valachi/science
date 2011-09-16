@@ -8,5 +8,6 @@ Science::Application.routes.draw do
 
   match "admin" => "sessions#new"
   match "log_out" => "sessions#destroy"
+  match 'all_articles' => 'articles#as_dict'
 
 end

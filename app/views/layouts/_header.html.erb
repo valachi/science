@@ -4,11 +4,12 @@
   <div class="nav">
     <% if current_user %>
       <ul>
-        <li><b><%= Article.count %></b> статей в базе </li> |
+        <li><b><%= Article.count %></b> статей в базе </li> -
+        <li><%= link_to "Все статьи", all_articles_path %></li> |
         <li>logged in as <strong><%= current_user.username %></strong></li> |
         <li><%= link_to "На главную", articles_path %> |
-        <li><%= link_to("Добавить новую статью", new_article_path) if current_user.admin? %></li> |
-        <li><%= link_to "Sign out", log_out_path, :method => :delete if current_user.admin? %></li>
+        <li><%= link_to("Добавить новую статью", new_article_path) %></li> |
+        <li><%= link_to "Sign out", log_out_path, :method => :delete %></li>
       </ul>
     <% end %>
   </div>

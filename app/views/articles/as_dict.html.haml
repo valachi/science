@@ -1,0 +1,7 @@
+- Article.as_dictionary.each do |letter, list|
+  %p
+    %strong= letter
+  %ul
+  - list.each do |post|
+    %li= link_to post.title, post
+
